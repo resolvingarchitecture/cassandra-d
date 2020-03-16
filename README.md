@@ -5,10 +5,11 @@ Using Cassandra on [GitHub](https://github.com/apache/cassandra.git) for guidanc
 
 Cassandra-D will be a highly-scalable partitioned row store. Rows will be organized into tables with a required primary key.
 
-Partitioning means that Cassandra-D will be able to distribute your data across many peers in an application-transparent matter. Cassandra-D will automatically repartition as peers are added and removed from the trust ring.
+Partitioning means that Cassandra-D will be able to distribute your data across many peers in an application-transparent matter. 
+Cassandra-D will automatically repartition as peers are added and removed from a d-ring.
 
-Trust ring is a group of peers that have agreed to become a community sharing the load. They, together as a whole, get compensated
-by end users purchasing persistence in BTC/XMR.
+D-Rings are a group of peers that have agreed to come together to participate in a persistence requirement requested by an end user. 
+They, together as a whole, get compensated by those end users in BTC/XMR.
 
 Row store means that like relational databases, Cassandra-D will organize data by rows and columns. The Cassandra-D Query Language (CDQL) will be very similar to SQL.
 
